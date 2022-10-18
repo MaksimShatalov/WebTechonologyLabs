@@ -1,5 +1,5 @@
   P A { 
-    color: green; /* Синий цвет текста */
+    color: green; 
 	font-size: 10px;
 	font-weight: bold;
 	text-decoration: overline;
@@ -8,7 +8,7 @@
 	text-align: right;
    }
   P C {
-      text-indent: 15mm; /* Отступ первой строки */
+      text-indent: 15mm; 
 	  font-family: "Courier";
 	  
 
