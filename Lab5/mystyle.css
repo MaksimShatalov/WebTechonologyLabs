@@ -1,0 +1,15 @@
+  P A { 
+    color: green; /* Синий цвет текста */
+	font-size: 10px;
+	font-weight: bold;
+	text-decoration: overline;
+   }
+  P B { 
+	text-align: right;
+   }
+  P C {
+      text-indent: 15mm; /* Отступ первой строки */
+	  font-family: "Courier";
+	  
+
+  }
