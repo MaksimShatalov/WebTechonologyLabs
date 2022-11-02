@@ -1,0 +1,52 @@
+ .scale {
+    display: inline-block; 
+    overflow: hidden; 
+   }
+   .scale img {
+    transition: 1s; 
+    display: block; 
+   }
+   .scale img:hover {
+    transform: scale(3); 
+   }
+ tr,td{
+    border: 1px solid black;
+}
+
+caption{
+    font-style: italic;
+}
+
+.scale{
+    transition: 1s;
+    width: 400px;
+    height: 200px;
+}
+.scale:hover{
+    transform: scale(3);
+}
+
+.caption{
+    float:left;
+    color:green;
+}
+table{
+    border-collapse: collapse;
+}
+.color{
+    background-color: brown;
+}
+.leader{
+    border: 1px solid black;
+    border-bottom: 1px dashed black;
+    border-top: 1px dashed black;
+}
+
+.epsleader{
+    border: 1px solid black;
+    border-bottom: 1px dashed black;
+}
+.othleader{
+    border: 1px solid black;
+    border-top: 1px dashed black;
+}
