@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Лабораторна робота 9</title>
+    </head>
+    <body>
+        <script src="script.js"></script>
+        <form name="formstudent" onsubmit="return mycheckform()">
+            <label>ПІБ</label>
+            <input type="text"  name="namestudent" id="name"><br>
+            <label>Ел.пошта</label>
+            <input type="email" name="emailstudent" id="email"><br>
+            <label>Номер телефону</label>
+            <input type="text" name="numberphone" id="phone"><br>
+			<label>Оберіть стать</label>
+			<div>
+            <input type="radio" name="radio">Чоловіча<br>
+            <input type="radio" name="radio">Жіноча<br>
+			</div>
+			<label>Оберіть Ваш Факультет</label>
+            <select name="select">
+                <option value="facult1">IKM</option>
+                <option value="facult2">ХТ</option>
+                <option value="facult3">КН</option>
+				<option value="facult4">БЕМ</option>
+				<option value="facult5">СГТ</option>
+				<option value="facult6">МІТ</option>
+            </select><br>
+			<label>Група</label>
+            <input type="text" name="group"><br>
+            <input type="checkbox">Я хочу отримувати новини від НТ"ХПІ"<br>
+            <input type="checkbox">Я хочу отримувати новини від СтудАльянсу<br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
