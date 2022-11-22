@@ -50,3 +50,9 @@ table{
     border: 1px solid black;
     border-top: 1px dashed black;
 }
+a:link, a:visited {
+    color: blue;
+}
+a {
+    text-decoration: none;
+}
