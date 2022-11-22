@@ -1,40 +1,36 @@
 function mycheckform(){
-	var c = document.forms["formstudent"]["namestudent"].value;
-	if(c=="")
+	var g = document.forms["formstudent"]["namestudent"].value;
+	if(g=="")
 	{
 		alert("Введіть ПІБ");
 		return false;
 	}
 	var d = document.forms["formstudent"]["emailstudent"].value;
-		if(d=="")
-	{
+	if(d==""){
 		alert("Введіть ел.пошту");
 		return false;
 	}
-	let h = document.querySelector('#emailstudent');
-	var checkmail = [a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}
-	if(!checkmail.test(h)){
-		alert("Некорктно введено ел.пошту");
-		checkmail.focus();
-		checkmail.select();
+	let email = document.querySelector('#email');
+	var checkmail = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
+	if(!checkmail.test(d)){
+		alert("Некоректно введено ел.пошту");
+		email.focus();
+		email.select();
 		return false;
 	}
 	var numb = document.forms["formstudent"]["numberphone"].value;
-	if(numb=="")
-		{
+	if(numb==""){
 		alert("Введіть номер телефону");
 		return false;
 	}
-	let g = document.querySelector('#numberphone');
-	var k = /\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/
-	if(!k.test(numb)){
-		alert("Некорктно введено телнфон");
-		k.focus();
-		k.select();
+	let phone = document.querySelector('#phone');
+	var checkphone = /^(\+)?(\d{1,2})?[( .-]*(\d{3})[) .-]*(\d{3,4})[ .-]?(\d{4})$/; // /\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/;
+	if(!checkphone.test(numb)){
+		alert("Некоректно введено номер телефону");
+		phone.focus();
+		phone.select();
 		return false;
 	}
-
-
 	var st = document.forms["formstudent"]["radio"].value;
 	if(st == 0)
 	{
@@ -48,5 +44,4 @@ function mycheckform(){
 		alert("Введіть групу");
 		return false;
 	}
-
 }
