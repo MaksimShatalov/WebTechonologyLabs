@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  background: url('bg.jpg');
+}
+label{
+    display:block;
+}
+submit{
+    display:block;
+}
